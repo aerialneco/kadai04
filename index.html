@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>気持ちの記録アプリ</title>
+</head>
+<body>
+    <!-- カレンダーセクション -->
+    <h1 id="title">気持ちの記録アプリ</h1>
+    <h1>日付を選択してください。</h1>
+    <div class="date-picker-wrapper">
+        <div class="selected-date"></div>
+        <div class="dates-container">
+            <div class="month">
+                <div class="arrows prev-month">&lt;</div>
+                <div class="month-item"></div>
+                <div class="arrows next-month">&gt;</div>
+            </div>
+            <div class="days-container"></div>
+        </div>
+    </div>
+
+    <!-- 気持ちの選択 -->
+    <div class="select_emotion">
+    <h1>気持ちを選んでください。</h1>
+        <ul>
+            <li class="emotion">怒り</li>
+            <li class="emotion">悲しみ</li>
+            <li class="emotion">緊張</li>
+            <li class="emotion">安心</li>
+            <li class="emotion">喜び</li>
+        </ul>
+        <ul>
+            <li class="emotion">嫌悪</li>
+            <li class="emotion">恐れ</li>
+            <li class="emotion">無関心</li>
+            <li class="emotion">驚き</li>
+            <li class="emotion">幸福</li>
+        </ul>
+    </div>
+
+    <!-- 気持ちの質の選択 -->
+    <div class="emotion_quality">
+        <h1>その気持ちが「どの程度」自分にとって「心地よい」ものか「辛い」ものかをお答えください。</h1>
+        <ul>
+            <li class="quality">-5</li>
+            <li class="quality">-4</li>
+            <li class="quality">-3</li>
+            <li class="quality">-2</li>
+            <li class="quality">-1</li>
+            <li class="quality">0</li>
+            <li class="quality">+1</li>
+            <li class="quality">+2</li>
+            <li class="quality">+3</li>
+            <li class="quality">+4</li>
+            <li class="quality">+5</li>
+        </ul>
+        <ul>
+            <li class="quality_description"><img src="./img/unhappy.png" alt="" class="face_icon"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"><img src="./img/nutral.png" alt="" class="face_icon"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"></li>
+            <li class="quality_description"><img src="./img/happy.png" alt="" class="face_icon"></li>
+        </ul>
+    </div>
+
+    <!-- 自由記述 -->
+    <!-- <h1>その気持ちを引き起こした出来事等、自由に記述してください。</h1>
+    <div class="textarea_container">
+    <textarea class="free_comment"></textarea>
+    </div> -->
+
+    <!-- 保村確認ボタン -->
+    <div class="confirm">
+        <ul>
+            <li id="confirm_btn" class="record_btn">記録を確認</li>
+            <li id="clear" class="record_btn">クリア</li>
+        </ul>
+    </div>
+
+    <table id="record">
+            <!-- データ挿入 -->
+    </table>
+    <hr>
+    <div id="footer">2023 all right reserved</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
